@@ -1,6 +1,6 @@
-#4.Python Operators
+#4.Operators.Py
 #1.Arithmetic operators
-'''a=20
+a=20
 b=10
 print("Addition(+):",(a+b)) #Addition(+): 30
 print("Subtraction(-):",(a-b)) # Subtraction(-): 10
@@ -87,7 +87,7 @@ print("name" in d) #True
 print("address" in d) #False
 print("id" not in d) #True
 print("batch" not in d) #False
-'''
+
 #6.Identity Operator(is , is not)
 a=[1,2,3,4]
 b=[1,2,3,4]
