@@ -101,7 +101,7 @@ print(a is not c) #False
 print(id(a)) #140709545526472
 print((id(b))) #1570889115008
 print(id(c)) #140709545526472
-
+5
 
 
 
