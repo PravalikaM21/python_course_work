@@ -5,7 +5,7 @@ name='pravalika'
 print(name) #output:pravalika
 name="pravalika"
 print(name) #output:pravalika
-name='''pravalika'''
+name=''pravalika''
 print(name) #output:pravalika
 print(type(name)) #output:<class 'str'>
 print(len(name)) #output:9
@@ -72,11 +72,10 @@ print(names) #PravalikaMounikaSravaniUdayKiran
 print(len(names)) #32
 print(min(names)) #K
 print(max(names)) #y
-print(chr(60)) #<
-print(ord("A")) #65
-print(ord("a")) #97
+print(chr(60)) #7
 
 #String Methods:
+#1)Case Conversion Methods:
 lname="muchanthala"
 fullname="pravalika muchanthala"
 print(lname.upper()) #MUCHANTHALA
@@ -86,15 +85,78 @@ print(fullname.title()) #Pravalika Muchanthala
 print(lname.casefold()) #muchanthala
 print(lname.swapcase()) #MUCHANTHALA
 
-#Alignment & Formatting Methods:
+#2)Alignment & Formatting Methods:
 print("python".center(10, "*")) #"*python*"
 print("py".ljust(5, "-")) # "py---"
 print("py".rjust(5, "-")) # "---py"
 print("560".zfill(5)) # "000560"
+s="python programming"
+print(s) #python programming
+print(s .center(60, '-')) #---------------------python programming---------------------
+print(s.ljust(60,'-')) #python programming------------------------------------------
+print(s.rjust(60,'-')) #------------------------------------------python programming
+print(s.zfill(40)) #0000000000000000000000python programming
 
+#3)Search & Find Methods:
+print(text) #python
+print(text.find("p")) #0
+print(text.find("m")) #-1(if valuue not found it returns -1 as output)
+print(s.rfind("g")) #17
+print(s.rfind("p")) #7
+print(text.index("p")) #0
+print(text.index("n")) #5
+print(text.index("y")) #1
+print("hello".rindex("e")) #1
+print("hello".rindex("l")) #3
+#print("hello".rindex("y")) #ValueError: substring not found(if valuue not found raise an error)
+print(text.count("p")) #1
+print(s.count("p")) #2
+print("hello".count("p")) #0
+print("banana".count("na")) #2
+print("abcbcbc".count("cbc")) #1
 
+#4) String Testing Methods (Boolean Results):
+c="DataScience"
+print(c.startswith("D")) #True
+print(c.endswith("e")) #True
+print("prava123".isalnum() ) #True
+print("rakshitha".islower()) # True
+print("SUNIL".isupper())  #True
+print("prava lika".isspace()) #False
+print(" ".isspace()) #True
+print("Dharani Duvasi".istitle() ) #True
+print("num1".isidentifier()) #True 
+print("23".isdecimal()) #True
+print("10".isdigit()) #True
+print("10".isnumeric()) #True
+li=["sample.py","data.txt","student.xls","practice.py"]
 
+#5. Replace & Modify Methods:
+print("mounika".replace("ika","neha")) #mounneha
+print("mouna".replace("a","i")) #mouni
+print("udaykiran".translate(str.maketrans("ay","pa"))) #udpakirpn
+print("abcdcde".translate(str.maketrans("cd","ud"))) #abudude
+print("python".maketrans("pon","bca")) #{112: 98, 111: 99, 110: 97}
+print(ord("p")) #112
 
+#6. Splitting & Joining Methods:
+print("prava,uday,sravs".split(",")) #['prava', 'uday', 'sravs']
+print("prava,uday,sravs".rsplit(",")) #['prava', 'uday', 'sravs']
+print("prava,uday,sravs".splitlines(",")) #['prava,uday,sravs']
+print("prava,uday,sravs".partition(",")) #('prava', ',', 'uday,sravs')
+print("prava,uday,sravs".rpartition(",")) #('prava,uday', ',', 'sravs')
 
+#7. Whitespace & Trimming Methods:
+print("data science ".strip()) #data science
+print("----datascience".lstrip("-")) #datascience
+print("datascience---- ".rstrip("-")) #datascience----
 
-
+#8. Encoding & Decoding Methods:
+text="java30💯"
+print("java30💯".encode()) #b'java30\xf0\x9f\x92\xaf'
+print(b'java30\xf0\x9f\x92\xaf'.decode()) #java30💯
+text1 = "Hello 🌈"
+print(text1.encode()) #b'Hello \xf0\x9f\x8c\x88'
+print(b'Hello \xf0\x9f\x99\x82'.decode()) #'Hello 🌈'
+print("welcome".encode()) #b'welcome'
+print(b"welcome".decode()) #welcome
