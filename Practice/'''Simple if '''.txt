@@ -1,0 +1,40 @@
+'''Simple if '''
+if condition:
+  #if true stmts
+
+'''if else '''
+if condition:
+  #if stmts
+else:
+   #else stmts
+
+'''if elif-else'''
+
+if condition1:
+   #if stmts
+elif condition2:
+    #cond-2 stms
+elif condition3:
+    # cond-3 stms
+....
+
+elif condition-n:
+    #con-n stmts
+else:
+    #else stmts
+
+
+
+
+
+
+
+'''Nested if'''
+
+if condition 1:
+  if condition2:
+     #if stmts
+  else:
+     #false stmt
+else:
+   #false
