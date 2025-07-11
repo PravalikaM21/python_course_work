@@ -38,3 +38,20 @@ age = 24
 score = 75
 # Using str.format()
 print("Name: {} , Age: {} , Score: {:f}".format(name, age,score))#Name: Teju , Age: 24 , Score: 75.000000
+name = "Santhosh"
+subject = "Python"
+print("Hello {}, welcome to {} class.".format(name, subject))
+# Output: Hello Santhosh, welcome to Python class.
+
+print("The {0} is {1} years old.".format("cat", 3))
+# Output: The cat is 3 years old.
+
+language = "Python"
+version = 3.11
+print("We are learning %s version %.2f" % (language, version))
+# Output: We are learning Python version 3.11
+
+name = "Pravalika"
+marks = 95
+print(f"{name} scored {marks} marks.")
+# Output: Pravalika scored 95 marks.
