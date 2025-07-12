@@ -19,8 +19,8 @@ student["course"] = "Python" # Adding a new key-value pair.
 print(student) #{'name': 'Pravalika', 'age': 20, 'course': 'Python'}
 
 student = {"name": "Pravalika", "age": 20}
-student["age"] = 21 ## Updating existing key
-print(student) #{'name': 'Pravalika', 'age': 21}
+student["age"] = 21 #Updating existing key
+print(student)      #{'name': 'Pravalika', 'age': 21}
 
 #Using update() method to add or update multiple key-value pairs.
 student = {"name": "Pravalika", "age": 20}
@@ -79,11 +79,37 @@ print(dict.values(student))          #dict_values(['Pravalika', 20, 'Python', 90
 print(dict.items(student))           #dict_items([('name', 'Pravalika'), ('age', 20), ('course', 'Python'), ('marks', 90)])  
 
 #Dictionary Methods for Adding and Updating Data:
-dict.update(student)
-print(student)                       #
-dict.setdefault("name","not found")
-print(student)                              
+details={"id":101,"batch":"DS-15"}
+print(details)                        #{'id': 101, 'batch': 'DS-15'}
+student.update({"course":"Datascience"})
+print(student)                        #{'name': 'Pravalika', 'age': 20, 'course': 'Python', 'marks': 90}
+student.setdefault("adddress","not found")
+print(student)                        #{'name': 'Pravalika', 'age': 20, 'course': 'Datascience', 'marks': 90, 'adddress': 'not found'}
 
+#Built-in Functions for Dictionaries:
+print(len(student))                  # 5
+print(min(student))                  # adddress
+print(max(student))                  # name
+print(sorted(student))               # ['adddress', 'age', 'course', 'marks', 'name']
+
+# Nested Dictionaries:(A dictionary can contain another dictionary as its value).
+students = {
+    1: {"name": "Pravalika", "age": 20, "course": "Python"},
+    2: {"name": "Santhosh", "age": 22, "course": "SQL"},
+    3: {"name": "Teju", "age": 21, "course": "Excel"}
+}
+print(students)
+#Output:
+     # {1: {'name': 'Pravalika', 'age': 20, 'course': 'Python'},
+     # 2: {'name': 'Santhosh', 'age': 22, 'course': 'SQL'},
+     #  3: {'name': 'Teju', 'age': 21, 'course': 'Excel'}}
+
+# Change Teju's course to "Power BI"
+students[3]["course"] = "Power BI"
+print(students[3]) #{'name': 'Teju', 'age': 21, 'course': 'Power BI'}
+
+
+  
 
 
 
