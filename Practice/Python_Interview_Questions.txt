@@ -1,0 +1,21 @@
+1) How do `nonlocal`, `global`, and `local` scope resolution work together? Give a nested example with all three.
+2) Why is `del` not just a function, and what does it delete? Reference or object?
+3) What are 'soft keywords' in Python 3.10+? How can they be used as variable names?
+4) What happens if you override `True` or `None` in older versions of Python?
+5) Explain with example how `yield` behaves differently from `return`, especially inside a loop.
+6) What are the five types of tokens in Python, and how are they internally represented in the Python tokenizer module?
+7) Can a single line of Python code contain all types of tokens? Show an example.
+8) Are `:` and `,` tokens or delimiters? Explain with reference to the tokenization process.
+9) Is Python a strongly typed or dynamically typed language? Give a real case where this affects your code.
+10) Why are tuples hashable but lists are not? Show an example involving a set.
+11) What’s the difference between `is` and `==`? Give an example where they give different results.
+12) Explain the precedence and associativity of Python operators with a tricky expression.
+13) Why does `a = a + 1` behave differently from `a += 1` for mutable objects like lists?
+14) What does `not a > b` mean in terms of operator chaining? Is it `not (a > b)` or `(not a) > b`?
+15) Explain how Python evaluates chained comparisons like `1 < x < 10`.
+16) Can we replace `if-elif-else` entirely using dictionaries or pattern matching in Python 3.10+? How?
+17) What happens if `if` is written without a colon, or if indentation is wrong?
+18) What is the difference between `continue` and `pass` inside a nested loop?
+19) Can you use `else` with loops in Python? What does it do?
+20) What happens when you `break` from a `try` block inside a loop? Where does control go?
+21) Is `return` allowed inside a loop? If yes, what does it return in a function?
