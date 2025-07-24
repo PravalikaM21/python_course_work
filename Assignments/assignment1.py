@@ -1,7 +1,7 @@
 
--:Swiggy Order Information System :-
-Food Order Details as Input
-
+#-:Swiggy Order Information System :-
+#Food Order Details as Input
+'''
 1.Order ID (int) - Unique identifier
 2.Customer Name (str)
 3.Restaurant Name (str)
@@ -17,7 +17,7 @@ i)   Comma Separation (sep=',') [Print Order ID, Customer Name, and Restaurant N
 ii)  Percentage Formatting (%)  [Show GST as percentage].
 iii) f-strings                  [Display the food items, total amount, and delivery status clearly].
 iv)  .format() method           [Show delivery address with formatting].
-
+'''
 
 #Swiggy Order Information System 
 # Task 1: Take Food Order Details as Input

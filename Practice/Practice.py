@@ -1,4 +1,4 @@
-num=int(input())
+'''num=int(input())
 if num % 3 ==0:
   if num>5:
     print("yes")
@@ -54,3 +54,27 @@ print(l)
 print(l.append(9))
 
 print([7,8].append(9))
+#--------------------------------------------------------
+x = 5
+
+if x > 0:
+    if x > 10:
+        print('Big')
+    elif x == 5:
+        print('Five')
+    else:
+        print('Neg')
+#output:Five
+#-------------------------------------------------------------
+x = 5
+if x > 0:
+  pass'''
+#--------------------------------------------------------------
+n = int(input('enter a number'))
+if n < 10:
+    if n % 2 != 0:
+        print("small")
+    else:
+        print("big")
+else:
+    print("10 or more")

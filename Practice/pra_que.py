@@ -1,0 +1,11 @@
+dic={1:{'product':'Rice','Price':60},
+     2:{'product':'Wheatflour','Price':45},
+     3:{'product':'Sugar','Price':40},
+     4:{'product':'MIlk','Price':25},
+     5:{'product':'Eggs','Price':70},
+     6:{'product':'Cookingoil','Price':130},
+     7:{'product':'Tea powder','Price':90},
+     8:{'product':'Salt','Price':20},
+     9:{'product':'Bread','Price':30},
+     10:{'Product':'soap','Price':25},
+    }
