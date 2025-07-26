@@ -1,5 +1,11 @@
-#1)Print the tables:
+#Control_statements.py:
 '''
+1)for: used to iterate the items. 
+       used when we know thw number of iterations.
+2)while: used to iterate the items until the specific condition is met. 
+         used when we dont know thw number of iterations.
+'''
+#1)Print the tables:
 num = int(input("Enter the table number:"))
 for i in range(1,21):
     print(f'{num} * {i} = {num*i}')
@@ -54,7 +60,7 @@ for i in items:
 #0 cycle
 #Enter the items:tv 
 #tv is not available
-'''
+
 email,pwd = 'xyzgmail.com','xyz123'
 max_attempts=5
 while max_attempts > 0:
@@ -69,7 +75,8 @@ while max_attempts > 0:
 else:
     print("try after sometime")
 #Output:
-'''Enter the email:xsm
+'''
+Enter the email:xsm
 Enter the passworddd
 Invalid login
 Enter the email:sf
@@ -89,3 +96,55 @@ try after sometime
 #Enter the email:xyzgmail.com
 #Enter the passwordxyz123
 #login successfull
+
+#Print 1 to 20 numbers:
+for i in range(1,21):
+    print(i,end=" ")
+#1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+ # Print even numbers upto 20
+for i in range(2,20,2):
+    print(i)
+# Print odd numbers upto 20
+for i in range(1,20,2):
+    print(i)
+
+# Print prime numbers upto 20:
+print("Prime numbers up to 20 are:")
+for num in range(2, 21):  # Start from 2, since 1 is not a prime number
+    is_prime = True
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(num,end=" ")
+#Prime numbers up to 20 are:
+#2 3 5 7 11 13 17 19 
+
+num=0
+while num<=20:
+    print(num,end=" ")
+    num+=1
+#0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+num=0
+while num<=20:
+    num+=1
+    print(num,end=" ")
+#1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21
+    
+num = 1
+print("Odd numbers up to 20:")
+while num <= 20:
+    if num % 2 != 0:
+        print(num,end=" ")
+    num += 1
+#Odd numbers up to 20:
+#1 3 5 7 9 11 13 15 17 19 
+num = 1
+print("Even numbers up to 20:")
+while num <= 20:
+    if num % 2 == 0:
+        print(num,end=" ")
+    num += 1
+#Even numbers up to 20:
+#2 4 6 8 10 12 14 16 18 20
