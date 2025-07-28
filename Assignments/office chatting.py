@@ -11,6 +11,7 @@ Enter the number of messages:
 Accept chat messages one by one in the format:
 Name: message
 Show a menu to let the user choose analysis options.
+
 #sample chatting:
 Pravalika: Good morning team!
 Teju: Morning Pravalika!
