@@ -1,4 +1,4 @@
-'''n=int(input("enter size"))
+n=int(input("enter size"))
 for row in range(n):
     if row<=n//2:
         print("*" * (row+1),end=" ")
@@ -198,7 +198,7 @@ for row in range(n):
             print("0",end=" ")
         else:
             print("1",end=" ")
-    print()'''
+    print()
 #15) 0 1 0 1 and 1 0 1 0
 rows = 4
 cols = 4

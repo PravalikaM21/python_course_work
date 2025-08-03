@@ -99,4 +99,4 @@ num=int(input("enter a number:"))
 check_even_odd(num)
 '''Output:
 enter a number:4
-4 is Even'''
+4 is Even='''
