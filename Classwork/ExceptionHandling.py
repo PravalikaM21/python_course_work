@@ -47,3 +47,15 @@ try:
     c=1+"1"
 except Exception as e:
     print(f"Error occured: {e}")
+#--------------------------------
+try:
+    amount=int(input("Enter the amount"))
+    if amount < 0:
+        raise ValueError("Enter the positive value")
+except Exception as e:
+    print(f"Error occured: {e}")
+else:
+    print("No Errors")
+    print("you can withdraw")
+finally:
+    print("------Remove your card----------")
